@@ -9,6 +9,7 @@ router.get('/profile', passport.checkAuthentication, usersController.profile);
 router.get('/sign-up', usersController.signUp);
 router.get('/sign-in', usersController.signIn);
 
+router.post('/ans',usersController.ans);
 
 router.post('/create', usersController.create);
 

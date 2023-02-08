@@ -12,11 +12,11 @@ form{
     align-items:center;
     background:transparent;
   }
-  form:hover{
+  /* form:hover{
     border:2px double darkslategrey;
     /* background:linear-gradient(red,rgb(61, 235, 61),rgb(23,203,203),lightblue); */
     background: black;
-  }
+  } */
 
   .dispFlex{
     display:flex;
@@ -55,4 +55,8 @@ form{
     background-color: rgb(16, 9, 9);
     color: white;
     text-align: center;
+  }
+
+  .form-group{
+    background-color: aquamarine;
   }

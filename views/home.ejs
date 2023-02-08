@@ -1,5 +1,92 @@
 
-        <h1>
+        <h5>
             Welcome to 
             Site By Ayushi / <%= title %>
-        </h1>
+        </h5>
+        <% if(locals.user){%>
+        <p>
+            Select yes or no from the following 
+        </p>
+        <!-- <h4> -->
+            <div class="form-group" >
+            <form action="/users/ans" method="POST" >
+                <label for="">1) Fever</label>
+                <br>
+                <input type="radio" name="one" id="yes"checked value="yes"/> <label for="yes">yes</label>
+                <input type="radio" name="one" id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">2) Cough</label>
+                <br>
+                <input type="radio" name="two" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="two"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">3) Shortness Breath</label>
+                <br>
+                <input type="radio" name="three" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="three"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">4) Sore Throat</label>
+                <br>
+                <input type="radio" name="four" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="four"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">5) Loss of taste</label>
+                <br>
+                <input type="radio" name="five" id="yes"checked value="yes"/><label for="yes">yes</label>
+                <input type="radio" name="five"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">6) Chills</label>
+                <br>
+                <input type="radio" name="six"id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="six"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">7) Aches</label>
+                <br>
+                <input type="radio" name="seven"id="yes"checked value="yes"/><label for="yes">yes</label>
+                <input type="radio" name="seven"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">8) Nausea</label>
+                <br>
+                <input type="radio" name="eight" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="eight"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">9) Exposure to someone</label>
+                <br>
+                <input type="radio" name="nine" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="nine"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">10) Exposure to someone with who tested covid positive</label>
+                <br>
+                <input type="radio" name="ten" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="ten"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">11) Have you been tested for COVID-19</label>
+                <br>
+                <input type="radio" name="eleven" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="eleven" id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <label for="">12) Have you tested positive for COVID-19</label>
+                <br>
+                <input type="radio" name="twelve" id="yes"checked value="yes" /><label for="yes">yes</label>
+                <input type="radio" name="twelve"  id="no" value="no" /><label for="no">no</label>
+                <br>
+
+                <input type="submit" value="Show">
+            </form>  
+        </div>   
+        <!-- </h4> -->
+        <br>
+        <%}%>
+      
+      
